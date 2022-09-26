@@ -1,0 +1,31 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://df1aces10phd0"]
+
+[ext_resource type="Texture2D" uid="uid://d1j3aukqrffs8" path="res://assets/textures/SkyOnlyHDRI020_4K-TONEMAPPED.jpg" id="1_d5mj8"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_m46if"]
+panorama = ExtResource("1_d5mj8")
+
+[sub_resource type="Sky" id="Sky_nnr2i"]
+sky_material = SubResource("PanoramaSkyMaterial_m46if")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_nnr2i")
+sky_custom_fov = 90.0
+ambient_light_source = 3
+tonemap_mode = 3
+ssr_enabled = true
+ssr_max_steps = 80
+ssr_fade_in = 0.713525
+ssr_fade_out = 2.92817
+ssr_depth_tolerance = 0.1
+ssao_enabled = true
+glow_enabled = true
+glow_levels/1 = 11.1
+glow_levels/2 = 3.35
+glow_levels/3 = 0.0
+glow_normalized = true
+glow_strength = 0.7
+glow_blend_mode = 1
+adjustment_enabled = true
+adjustment_contrast = 1.08
